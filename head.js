@@ -3,7 +3,7 @@ const assertEqual = function(actual, expected){
   if (actual === expected){
     return `\u2705\u2705\u2705 Assertion passed : ${actual} === ${expected}`;
   }else {
-    return `Assertion Failed : ${actual} !=== ${expected}`;
+    return `\u274C\u274C\u274C Assertion Failed : ${actual} !=== ${expected}`;
   }
 }
 //TEST CODE
