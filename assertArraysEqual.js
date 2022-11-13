@@ -1,8 +1,9 @@
-const without = (source, itemsToRemove) => {
-  let modifiedArray = source;
-  for (i of itemsToRemove){
-    index = source.indexOf(i);
-    modifiedArray.splice(index,1);
-  }return modifiedArray;
+const eqArrays = require('./eqArrays')
+const assertArraysEqual = (actual,expected) => {
+  if (eqArrays(actual,expected)){
+    console.log(`\u2705\u2705\u2705Assertion passed : ${actual} === ${expected}`)
+  }else {
+    console.log(`\u274C\u274C\u274CAssertion failed : ${actual} !== ${expected}`)
+  }
 }
-console.log(without(["1","2","3"],[1,2,"3"]));
+module.exports = assertArraysEqual;

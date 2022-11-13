@@ -1,11 +1,11 @@
-//Assert function
-const assertEqual = function(actual, expected){
-  if (actual === expected){
-    return `\u2705\u2705\u2705 Assertion passed : ${actual} === ${expected}`;
-  }else {
-    return `\u274C\u274C\u274C Assertion Failed : ${actual} !=== ${expected}`;
+const assertEqual = require('./assertEqual')
+
+const head = array => {
+  if(array.length === 0){
+    return undefined;
   }
+  return array[0];
 }
-//TEST CODE
-console.log(assertEqual("Light","house"));
-console.log(assertEqual(1,1));
+//exporting the head function
+module.exports = head;
+
