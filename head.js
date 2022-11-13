@@ -8,4 +8,3 @@ const head = array => {
 }
 //exporting the head function
 module.exports = head;
-
