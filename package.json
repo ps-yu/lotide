@@ -1,7 +1,7 @@
 {
   "name": "@ps_yu/lotide",
-  "version": "1.0.0",
-  "description": "",
+  "version": "3.0.0",
+  "description": "A mini clone of the Lodash directory",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ps-yu/lotide.git"
   },
-  "author": "",
+  "author": "Pankaj",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ps-yu/lotide/issues"
