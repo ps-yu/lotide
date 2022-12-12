@@ -6,5 +6,5 @@ const tail = array => {
   }
   return array[array.length-1];
 }
-//exporting the head function
+//exporting the tail function
 module.exports = tail;
