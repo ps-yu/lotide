@@ -34,3 +34,10 @@ The following functions are currently implemented:
 * `letterPostions` : Function that takes a string and return all the indices of the letter positions of the string
 * `findKeyByValue`: Function that takes in an object and a value and returns the first key that corresponds to the value
 * `Map` : Function that takes an array and a callback and returns a new array based on the callback 
+* `assertEqual` : Function that takes two values and returns true if they are equl and false otherwise.
+* `eqArrays`: Function that takes in 2 arrays and returns true if they are equal and false otherwise.
+* `without`: Function that takes in a source array and returns only the items that are not in the itemsToRemove array.
+* `flatten` : Function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
+* `countOnly` : Function takes a collection of items and returns only a subset of those items.
+* `takeUntil` : Function that takes in a array and a callback and returs a slice of the array based on the criteria specified in the callback.
+* `findKey` : Function that takes in an object and a callback and returns the first key that meets the criteria.

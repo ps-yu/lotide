@@ -1,3 +1,8 @@
+/*Function that takes in an array that contains nested array and returns a flattened version of the array*/
+
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
+
 const flatten = (inputArray) => {
   flattenedArray = [];
   for (items of inputArray){
@@ -10,4 +15,5 @@ const flatten = (inputArray) => {
     }
   }return flattenedArray;
 }
-console.log(flatten([1,2,3,4,[5,67,8],[1]]))
+
+module.exports = flatten;

@@ -1,3 +1,5 @@
+/* A function that takes in an array and returns the middle most element of the array*/
+
 const middle = (inputArray) => {
   let numberOfItems = inputArray.length;
   if (numberOfItems === 1 || numberOfItems === 2){
@@ -11,4 +13,3 @@ const middle = (inputArray) => {
   }
 }
 module.exports = middle;
-console.log(Array.isArray(middle([12,3,4])))

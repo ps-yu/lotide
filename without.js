@@ -1,3 +1,4 @@
+/*Function that takes in a source array and and itemsToRemove array and returns only the items from the source array that are not in itemsToRemove array*/
 const without = (source, itemsToRemove) => {
   let modifiedArray = source;
   for (i of itemsToRemove){
@@ -9,4 +10,4 @@ const without = (source, itemsToRemove) => {
     }
   }return modifiedArray;
 }
-console.log(without(["1","2","3"],[1,2,"3","pankaj"]));
+module.exports = without;

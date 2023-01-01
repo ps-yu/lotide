@@ -1,4 +1,4 @@
-//Changes
+/* A function that take in two values and returns true if they are equal and false otherwise*/
 //Function implementation
 const assertEqual = function(actual, expected){
   if (actual === expected){

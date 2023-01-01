@@ -1,3 +1,7 @@
+/*Function that takes in a an array and a callback and returns a new array as per the criteria of the function*/
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+
 const words = ["ground", "control", "to", "major", "tom"];
 const map = function(array, callback){
   const results = [];
@@ -6,5 +10,4 @@ const map = function(array, callback){
   }
   return results;
 }
-const results1 = map(words, word => word[0]);
-console.log(results1);
+module.exports = words;

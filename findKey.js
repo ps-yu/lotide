@@ -1,13 +1,19 @@
+/*Function that takes in an object and returns the first key that meets the criteria*/
+const assertEqual = require('./assertEqual');
 const findKey = function(object, callback){
-  for (let i in obejct){
-    console.log(i);
+  for (let i in object){
+    if (callback(object[i]))
+      return i;
   }
 }
-findKey({
+
+const result = findKey({
   "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2) // => "noma"
+  "Akaleri": { stars: 3 },
+  "noma": { stars: 2 },
+  "elBulli": { stars: 4 },
+  "Ora": { stars: 2 },
+  "Akelarre": { stars: 4 }
+}, x => x.stars === 4) // => "noma"
+
+module.exports = findKey;
