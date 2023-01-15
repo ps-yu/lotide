@@ -1,5 +1,4 @@
 /*Function that takes in an object and returns the first key that meets the criteria*/
-const assertEqual = require('./assertEqual');
 const findKey = function(object, callback){
   for (let i in object){
     if (callback(object[i]))
