@@ -1,6 +1,6 @@
 {
   "name": "@ps_yu/lotide",
-  "version": "3.0.0",
+  "version": "5.0.0",
   "description": "A mini clone of the Lodash directory",
   "main": "index.js",
   "directories": {
